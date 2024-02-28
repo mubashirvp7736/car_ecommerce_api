@@ -1,5 +1,9 @@
+import 'package:ecommerce/controller/bottom_provider.dart';
+import 'package:ecommerce/controller/product_provider.dart';
+import 'package:ecommerce/controller/search_provider.dart';
 import 'package:ecommerce/controller/store_provider.dart';
 import 'package:ecommerce/controller/user_provider.dart';
+import 'package:ecommerce/controller/wishlist_provider.dart';
 import 'package:ecommerce/view/welcome/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -16,8 +20,11 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create:(context) => StoreProvider(),),
-        ChangeNotifierProvider(create:(context) => UserProvider(),)
-
+        ChangeNotifierProvider(create:(context) => UserProvider(),),
+        ChangeNotifierProvider(create:(context) => BottomProvider(),),
+        ChangeNotifierProvider(create: (context) => SearchProvider(),),
+        ChangeNotifierProvider(create: (context) => ProductProvider(),),
+        ChangeNotifierProvider(create: (context) => WishListProvider(),)
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

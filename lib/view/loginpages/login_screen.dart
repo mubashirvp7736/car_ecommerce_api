@@ -4,7 +4,7 @@ import 'package:ecommerce/controller/store_provider.dart';
 import 'package:ecommerce/controller/user_provider.dart';
 import 'package:ecommerce/model/user_model.dart';
 import 'package:ecommerce/view/loginpages/signup_screen.dart';
-import 'package:ecommerce/widgets/bottom_Bar.dart';
+import 'package:ecommerce/widgets/bottom_bar.dart';
 import 'package:ecommerce/widgets/text_form.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
